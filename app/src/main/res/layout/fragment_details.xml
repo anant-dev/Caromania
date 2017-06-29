@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anants.fragmentcaromania.DetailsFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainLayout">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/appicon" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <EditText
+                    android:id="@+id/carTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Car Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="casual"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/aboutCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="About Car"
+                    android:fontFamily="casual"
+                    android:textColorHint="@color/black"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="20dp"
+                    android:stretchColumns="0,1"
+                    app:layout_constraintHorizontal_bias="0.55">
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:fontFamily="casual"
+                            android:text="@string/eng_disp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/enginedisplacement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:fontFamily="casual"
+                            android:text="@string/maxpower"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/maximumpower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:fontFamily="casual"
+                            android:text="@string/maxtorque"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/maximumtorque"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:fontFamily="casual"
+                            android:text="@string/topspeed"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/topspeed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="@string/acceleration"
+                            android:fontFamily="casual"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/acceleration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:fontFamily="casual"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="casual"
+                    android:text="@string/edit"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/save"
+                    android:fontFamily="casual"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageEditButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                app:srcCompat="@android:drawable/ic_menu_edit"
+                android:background="@color/white"
+                tools:layout_editor_absoluteX="326dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

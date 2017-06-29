@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Caromania</string>
+    <string name="action_settings">Settings</string>
+    <string name="eng_disp">Engine Displacement (cc)</string>
+    <string name="maxpower">Maximum Power (bhp)</string>
+    <string name="maxtorque">Maximum Torque (Nm)</string>
+    <string name="topspeed">Top Speed (Kmph)</string>
+    <string name="acceleration">Acceleration (0-100) in sec</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="username_required">Username is Required</string>
+    <string name="password_requireed">Password is Required</string>
+    <string name="login_successfull">Login Successfully</string>
+    <string name="login_error">Incorrect Username or password</string>
+    <string name="saved">Information Saved Successfully</string>
+    <string name="logout_successfull">Logout Successfully</string>
+    <string name="image_saved">Image Saved Successfully</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
