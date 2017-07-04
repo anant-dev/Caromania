@@ -1,4 +1,4 @@
-package com.example.anants.fragmentcaromania;
+package com.example.anants.caromania;
 
 import org.junit.Test;
 

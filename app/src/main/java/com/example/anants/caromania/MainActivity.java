@@ -1,4 +1,4 @@
-package com.example.anants.fragmentcaromania;
+package com.example.anants.caromania;
 
 import android.net.Uri;
 import android.support.v4.app.Fragment;
